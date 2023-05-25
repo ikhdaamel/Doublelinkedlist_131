@@ -167,3 +167,21 @@ void DoubleLinkedlist::searchData() {
 		cout << "\nName : " << curr->name << endl;
 	}
 }
+
+int main() {
+	DoubleLinkedlist obj;
+	while (true) {
+		try {
+			cout << "\nMenu" << endl;
+			cout << "1. add a record to the list" << endl;
+			cout << "2. delete a record from the list" << endl;
+			cout << "3. view all records in the ascending ordeer of roll numbers" << endl;
+			cout << "4. view all records in the descending order of roll numbers" << endl;
+			cout << "5. search for a record in the list" << endl;
+			cout << "6. exit" << endl;
+			cout << "\nEnter your choice (1-6) : ";
+			char ch;
+			cin >> ch;
+		}
+	}
+}
