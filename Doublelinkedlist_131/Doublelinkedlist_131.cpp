@@ -9,3 +9,18 @@ public:
 	Node* next;
 	Node* prev;
 }; 
+
+class DoubleLinkedlist {
+private:
+	Node* START;
+public:
+	DoubleLinkedlist();
+	void addNode();
+	bool search(int rolNo, Node** previous, Node** current);
+	bool deleteNode(int rollNo);
+	bool listEmpty();
+	void traverse();
+	void revtraverse();
+	void hapus();
+	void searchData();
+};
