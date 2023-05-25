@@ -49,9 +49,9 @@ void DoubleLinkedlist::addNode() {
 		newNode->next = START;											//step 3
 		if (START != NULL)
 			START->prev = newNode;										//step 4
-			newNode->prev = NULL;										//step 5
-			START = newNode;											//step 6
-			return;
+		newNode->prev = NULL;										//step 5
+		START = newNode;											//step 6
+		return;
 	}
 
 	/*inserting a Node Between two nodes in the list*/
@@ -95,8 +95,12 @@ bool DoubleLinkedlist::deleteNode(int rollNo) {
 	if (previous != NULL)
 		previous->next = current->next;									//step 3
 	else
-		START = curent->next;
+		START = current->next;
 
 	double current;														//step 4
 	return true;
+}
+
+bool DoubleLinkedlist::listEmpty() {
+	return (START == NULL);
 }
